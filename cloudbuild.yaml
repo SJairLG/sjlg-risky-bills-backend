@@ -7,9 +7,10 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'us-east1-docker.pkg.dev/project-afa61973-82ee-4f08-99f/risky-bills-backend/risky-bills-backend:latest']
 
-  # 3. Desplegar automáticamente en Cloud Run
+  # 3. Desplegar automáticamente en Cloud Run (CORREGIDO CON GCLOUD)
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     args:
+      - 'gcloud'
       - 'run'
       - 'deploy'
       - 'mi-servicio-backend'
