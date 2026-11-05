@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.json({ mensaje: '¡Hola desde mi backend en Google Cloud!' });
 });
 
+app.get('/prueba', (req, res) => {
+  res.json({ mensaje: 'Primer commit CICD' });
+});
+
 // Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
