@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
   res.json({ mensaje: '¡Hola desde mi backend en Google Cloud!' });
 });
 
-app.get('/prueba', (req, res) => {
+app.get('/test', (req, res) => {
   res.json({ mensaje: 'Primer commit CICD' });
 });
 
